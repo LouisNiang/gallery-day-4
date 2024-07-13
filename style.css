@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+div{
+    display: grid;
+    grid-gap: 0.25rem;
+    grid-template-areas:
+        "a a a b b b f f f g g g"
+        "a a a b b b f f f g g g"
+        "a a a c c c f f f g g g"
+        "d d d c c c h h i i j j"
+        "d d d e e e h h i i j j"
+        "d d d e e e k k k l l l";
+}
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+img:nth-child(1){
+    grid-area: a;
+}
+img:nth-child(2){
+    grid-area: b;
+}
+img:nth-child(3){
+    grid-area: c;
+}
+img:nth-child(4){
+    grid-area: d;
+}
+img:nth-child(5){
+    grid-area: e;
+}
+img:nth-child(6){
+    grid-area: f;
+}
+img:nth-child(7){
+    grid-area: g;
+}
+img:nth-child(8){
+    grid-area: h;
+}
+img:nth-child(9){
+    grid-area: i;
+}
+img:nth-child(10){
+    grid-area: j;
+}
+img:nth-child(11){
+    grid-area: k;
+}
+img:nth-child(12){
+    grid-area: l;
+}
